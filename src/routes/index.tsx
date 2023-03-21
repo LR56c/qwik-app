@@ -1,5 +1,6 @@
 import { component$ }        from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import Footer from "~/components/shared/footer";
 import Nav                   from "~/components/shared/nav";
 import Phrase                from "~/components/shared/phrase";
 
@@ -180,6 +181,7 @@ export default component$( () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   )
     ;

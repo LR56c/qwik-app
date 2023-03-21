@@ -5,7 +5,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.miclase{
-    @apply bg-red-500;
-}
