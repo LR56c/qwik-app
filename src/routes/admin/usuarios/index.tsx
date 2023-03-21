@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import Nav            from "~/components/shared/nav";
 import Footer         from "~/components/shared/footer";
-import AdminTabs      from "~/components/shared/-tabs";
+import AdminTabs      from "~/components/shared/admin-tabs";
 
 export default component$( () => {
   return (

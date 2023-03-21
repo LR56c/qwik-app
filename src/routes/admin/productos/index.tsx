@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import Nav            from "~/components/shared/nav";
-import AdminTabs      from "~/components/shared/-tabs";
+import AdminTabs      from "~/components/shared/admin-tabs";
 import Footer         from "~/components/shared/footer";
 import AddSection     from "~/components/shared/add-section";
 

@@ -19,36 +19,7 @@ export default component$( () => {
             </h3>
           </div>
           <div class="relative p-6 space-y-6">
-
-            <dl
-              class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
-              <div class="flex flex-col pb-3">
-                <dt
-                  class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Email
-                  address
-                </dt>
-                <dd class="text-lg font-semibold">yourname@flowbite.com</dd>
-              </div>
-              <div class="flex flex-col py-3">
-                <dt
-                  class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Home
-                  address
-                </dt>
-                <dd class="text-lg font-semibold">92 Miles Drive, Newark, NJ
-                  07103, California, USA
-                </dd>
-              </div>
-              <div class="flex flex-col pt-3">
-                <dt
-                  class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Phone
-                  number
-                </dt>
-                <dd class="text-lg font-semibold">+00 123 456 789 / +12 345
-                  678
-                </dd>
-              </div>
-            </dl>
-            <div class="relative">
+            <div class="relative max-w-md">
               <input type="text" id="floating_outlined"
                      class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                      placeholder=" " />
@@ -57,7 +28,7 @@ export default component$( () => {
                 Nombre
               </label>
             </div>
-            <div class="relative">
+            <div class="relative max-w-md">
               <input type="text" id="floating_outlined"
                      class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                      placeholder=" " />
@@ -66,7 +37,7 @@ export default component$( () => {
                 Correo
               </label>
             </div>
-            <div class="relative">
+            <div class="relative max-w-md">
               <input type="text" id="floating_outlined"
                      class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                      placeholder=" " />
@@ -75,7 +46,7 @@ export default component$( () => {
                 Contraseña
               </label>
             </div>
-            <div class="relative">
+            <div class="relative max-w-md">
               <input type="text" id="floating_outlined"
                      class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                      placeholder=" " />
@@ -84,7 +55,7 @@ export default component$( () => {
                 Celular
               </label>
             </div>
-            <div class="relative">
+            <div class="relative max-w-md">
               <input type="text" id="floating_outlined"
                      class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                      placeholder=" " />
