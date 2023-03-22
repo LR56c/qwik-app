@@ -1,32 +1,113 @@
-import { component$ } from "@builder.io/qwik"
-import ProductSm from "~/components/shared/product-sm"
+import { component$ } from "@builder.io/qwik";
+import Nav            from "~/components/shared/nav";
+import Footer         from "~/components/shared/footer";
+import Phrase         from "~/components/shared/phrase";
 
-export default component$(() => {
+export default component$( () => {
   return (
     <>
-      <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <a href="#">
-          <img class="p-8 rounded-t-lg" src="https://media.istockphoto.com/id/1198271727/es/foto/objeto-ondulado-abstracto.jpg?b=1&s=170667a&w=0&k=20&c=xe4iO1HXrNxrlBjX7zXBT3WAn3KkteK17pAPGWzK_4A=" alt="product image" />
-        </a>
-        <div class="px-5 pb-5">
-          <a href="#">
-            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
-          </a>
-          <div class="flex items-center mt-2.5 mb-5">
-            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+      <Nav />
+      <div class="relative flex w-full h-full gap-4 p-4">
+        <div class="h-full flex flex-col basis-2/3 gap-4">
+          <div>
+            <img class="h-full object-contain max-w-full rounded-lg"
+                 src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg"
+                 alt="" />
           </div>
-          <div class="flex items-center justify-between">
-            <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-            <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+          <div
+            class="flex lg:flex-nowrap flex-wrap lg:justify-start justify-center gap-4 lg:h-40 h-full overflow-x-auto flex gap-4">
+            <img class="h-36 h-36 rounded-lg"
+                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                 alt="" />
+            <img class="h-36 h-36 rounded-lg"
+                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+                 alt="" />
+            <img class="h-36 h-36 rounded-lg"
+                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+                 alt="" />
+            <img class="h-36 h-36 rounded-lg"
+                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+                 alt="" />
+            <img class="h-36 h-36 rounded-lg"
+                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+                 alt="" />
           </div>
         </div>
+        <div
+          class="h-full w-full basis-1/3 flex flex-col justify-center items-start">
+          <div
+            class="w-full w-full text-sm">
+            id del producto
+          </div>
+          <div
+            class="w-full w-full my-2 font-medium">
+            Nombre del producto
+          </div>
+          <div
+            class="w-full h-full flex flex-col">
+            <div class="text-gray-400 line-through">$100</div>
+            <div class="flex items-center gap-2">
+              <div class="text-red-600 text-2xl font-bold">$60</div>
+              <div class="text-red-600 text-sm">(-40% descuento)</div>
+            </div>
+          </div>
+          <div class="w-full h-full flex my-2 flex-col">
+            <p class="font-bold my-2">Cantidad</p>
+            <div class="w-full flex items-center gap-4">
+              <div
+                class="h-12 border-2 rounded-full flex justify-center items-center">
+                <div class="flex gap-2 px-2">
+                  <button>
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor"
+                         stroke-width="1.5" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M18 12H6"></path>
+
+                    </svg>
+                  </button>
+                  <p class="mx-2">0</p>
+                  <button>
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor"
+                         stroke-width="1.5" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v12m6-6H6"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <button type="button"
+                      class="h-12 px-5 py-2.5 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm text-center">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+          <div
+            class="my-4 flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-2 after:border-gray-100 after:border-1 after:inline-block">
+          </div>
+          <div
+            class="w-full h-full">
+            Descripcion del producto
+          </div>
+
+        </div>
       </div>
-      <ProductSm/>
+      <Phrase />
+      <div class="flex flex-wrap w-full gap-4 h-full justify-center items-center">
+        <div class="h-32 w-32 bg-red-800"></div>
+        <div class="h-32 w-32 bg-red-800"></div>
+        <div class="h-32 w-32 bg-red-800"></div>
+        <div class="h-32 w-32 bg-red-800"></div>
+        <div class="h-32 w-32 bg-red-800"></div>
+        <div class="h-32 w-32 bg-red-800"></div>
+        <div class="h-32 w-32 bg-red-800"></div>
+        <div class="h-32 w-32 bg-red-800"></div>
+        <div class="h-32 w-32 bg-red-800"></div>
+        <div class="h-32 w-32 bg-red-800"></div>
+        <div class="h-32 w-32 bg-red-800"></div>
+      </div>
+      <Footer />
     </>
-  )
-})
+  );
+} );

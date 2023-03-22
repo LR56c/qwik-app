@@ -11,9 +11,11 @@ export default component$(() => {
   return (
       <main>
         <Slot />
-        <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
-        <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+        {/*<script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>*/}
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.10/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.10/dist/js/uikit-icons.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+        {/*<script src="node_modules/flowbite/dist/flowbite.min.js"></script>*/}
       </main>
   );
 });
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>

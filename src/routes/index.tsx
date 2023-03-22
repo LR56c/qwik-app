@@ -1,13 +1,19 @@
 import { component$ }        from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import Footer from "~/components/shared/footer";
+import Footer                from "~/components/shared/footer";
 import Nav                   from "~/components/shared/nav";
 import Phrase                from "~/components/shared/phrase";
+import ProductItem           from "~/components/shared/product-item";
+import RecomendedProduct     from "~/components/shared/recomended-product";
+import OnSaleProduct         from "~/components/shared/on-sale-product";
 
 export default component$( () => {
   return (
     <>
       <Nav />
+      <ProductItem/>
+      <RecomendedProduct/>
+      <OnSaleProduct/>
       <div class="relative m-4 h-full w-full flex gap-4">
         <div class="basis-11/12 h-auto grid grid-cols-3 gap-2">
           <div>
