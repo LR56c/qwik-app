@@ -4,8 +4,8 @@ export default component$( () => {
   return (
     <>
       <div
-        class="relative flex h-6 w-full items-center justify-center p-6 text-center bg-nav">
-        <p class="text-2xl font-bold text-white">
+        class="relative flex w-full items-center justify-center p-6 text-center bg-nav h-24 xxs:h-20 sm:h-16 xl:h-6">
+        <p class="text-sm xxs:text-base xs:text-xl font-bold text-white sm:text-2xl">
           ¡Despacho a Todo Chile! Santiago Urbano Gratis desde $20.000 y
           Regiones por
           pagar. <a href="" class="underline">Más Info AQUÍ</a>

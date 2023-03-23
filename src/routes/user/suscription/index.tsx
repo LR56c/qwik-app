@@ -1,16 +1,13 @@
 import { component$ } from "@builder.io/qwik";
-import Nav            from "~/components/shared/nav";
 import Tabs           from "~/components/shared/tabs";
-import Footer         from "~/components/shared/footer";
 
 export default component$( () => {
   return (
     <>
-      <Nav />
       <Tabs />
       <div
-        class="w-full m-4 flex justify-center items-center place-items-center">
-        <div class="w-1/2 bg-white rounded-lg shadow">
+        class="w-full p-4 flex justify-center items-center place-items-center">
+        <div class="w-full xs:w-2/3 md:w-1/2 bg-white rounded-lg shadow">
           <div
             class="p-4 space-y-2 border-b rounded-t">
             <h3
@@ -22,9 +19,9 @@ export default component$( () => {
             </p>
           </div>
           {/*main flex*/}
-          <div class="relative flex flex-row p-6">
+          <div class="relative flex p-6 gap-6 lg:gap-0 flex-col lg:flex-row">
             {/*listado*/}
-            <ul role="list" class="w-1/2 space-y-5">
+            <ul role="list" class="w-full lg:w-1/2 space-y-5">
               <li class="flex space-x-3">
                 <span
                   class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
@@ -76,8 +73,8 @@ export default component$( () => {
               </li>
             </ul>
             {/*tarjeta*/}
-            <div class="w-1/2 flex justify-center items-center">
-              <div class="py-3 flex w-2/3 justify-evenly items-center rounded-lg border-gray-200 border-2">
+            <div class="w-full lg:w-1/2 flex flex-row justify-start items-center">
+              <div class="py-3 lg:mx-auto flex lg:w-full xl:w-3/4 justify-evenly items-center rounded-lg border-gray-200 border-2">
                 <svg class="fill-current w-8 h-8 text-gray-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"></path>
                 </svg>
@@ -97,7 +94,6 @@ export default component$( () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 } );

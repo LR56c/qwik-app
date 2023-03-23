@@ -1,16 +1,13 @@
 import { component$ } from "@builder.io/qwik";
-import Nav            from "~/components/shared/nav";
-import Footer         from "~/components/shared/footer";
 
 export default component$( () => {
   return (
     <>
-      <Nav />
       <div
-        class="bg-blue-500 h-16 w-full flex justify-center items-center text-white text-3xl">
+        class="bg-blue-500 h-16 w-full flex justify-center items-center text-white text-xl xxs:text-3xl">
         Pago orden&nbsp;<a href="#" class="font-medium underline">#123456</a>
       </div>
-      <div class="flex w-full h-full">
+      <div class="flex flex-col lg:flex-row w-full h-full lg:items-start items-center">
         {/*carrito*/}
         <div
           class="m-2 h-full w-full bg-white overflow-x-auto rounded-lg shadow">
@@ -431,9 +428,9 @@ export default component$( () => {
             </table>
           </div>
         </div>
-        <div class="flex flex-col p-2 basis-2/5 w-full">
+        <div class="lg:order-1 order-first flex flex-col p-2 basis-2/5 lg:w-full w-full xs:w-2/3">
           {/*Datos Tarjeta*/ }
-          <div class="w-full h-96">
+          <div class="w-full h-48 sm:h-60">
             <div class="h-full bg-white rounded-lg shadow">
               {/*title*/ }
               <div
@@ -478,7 +475,6 @@ export default component$( () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 } );

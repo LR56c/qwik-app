@@ -1,21 +1,47 @@
 import { component$ } from "@builder.io/qwik";
-import Nav            from "~/components/shared/nav";
-import Footer         from "~/components/shared/footer";
 import Phrase         from "~/components/shared/phrase";
+import OnSaleProduct  from "~/components/shared/on-sale-product";
 
 export default component$( () => {
   return (
     <>
-      <Nav />
-      <div class="relative flex w-full h-full gap-4 p-4">
+      <div class="relative flex flex-col md:flex-row w-full h-full gap-4 p-4">
+        {/*apartado imagenes producto*/}
         <div class="h-full flex flex-col basis-2/3 gap-4">
-          <div>
-            <img class="h-full object-contain max-w-full rounded-lg"
+          {/*imagen movil/tablet*/}
+          <div class="block md:hidden w-full h-full flex justify-center">
+            <img class="h-24 xxs:h-36 xs:h-56 sm:h-72 object-contain rounded-lg"
                  src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg"
                  alt="" />
           </div>
+          {/*listado movil/tablet*/}
           <div
-            class="flex lg:flex-nowrap flex-wrap lg:justify-start justify-center gap-4 lg:h-40 h-full overflow-x-auto flex gap-4">
+            class="md:hidden flex justify-start gap-4 h-40 overflow-x-auto flex">
+            <img class="h-36 h-36 rounded-lg"
+                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                 alt="" />
+            <img class="h-36 h-36 rounded-lg"
+                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+                 alt="" />
+            <img class="h-36 h-36 rounded-lg"
+                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+                 alt="" />
+            <img class="h-36 h-36 rounded-lg"
+                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+                 alt="" />
+            <img class="h-36 h-36 rounded-lg"
+                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+                 alt="" />
+          </div>
+          {/*imagen principal escritorio*/}
+          <div class="hidden md:block">
+            <img class="h-full object-contain w-full rounded-lg"
+                 src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg"
+                 alt="" />
+          </div>
+          {/*listado escritorio*/}
+          <div
+            class="hidden md:flex lg:flex-nowrap flex-wrap lg:justify-start justify-center gap-4 lg:h-40 h-full overflow-x-auto gap-4">
             <img class="h-36 h-36 rounded-lg"
                  src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
                  alt="" />
@@ -33,6 +59,7 @@ export default component$( () => {
                  alt="" />
           </div>
         </div>
+        {/*apartado ficha producto*/}
         <div
           class="h-full w-full basis-1/3 flex flex-col justify-center items-start">
           <div
@@ -53,7 +80,7 @@ export default component$( () => {
           </div>
           <div class="w-full h-full flex my-2 flex-col">
             <p class="font-bold my-2">Cantidad</p>
-            <div class="w-full flex items-center gap-4">
+            <div class="w-full flex xxs:flex-row flex-col items-center gap-4">
               <div
                 class="h-12 border-2 rounded-full flex justify-center items-center">
                 <div class="flex gap-2 px-2">
@@ -78,7 +105,7 @@ export default component$( () => {
                 </div>
               </div>
               <button type="button"
-                      class="h-12 px-5 py-2.5 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm text-center">
+                      class="h-12 px-5 py-2.5 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-xs lg:text-sm text-center">
                 Agregar al carrito
               </button>
             </div>
@@ -90,24 +117,19 @@ export default component$( () => {
             class="w-full h-full">
             Descripcion del producto
           </div>
-
         </div>
       </div>
       <Phrase />
       <div class="flex flex-wrap w-full gap-4 h-full justify-center items-center">
-        <div class="h-32 w-32 bg-red-800"></div>
-        <div class="h-32 w-32 bg-red-800"></div>
-        <div class="h-32 w-32 bg-red-800"></div>
-        <div class="h-32 w-32 bg-red-800"></div>
-        <div class="h-32 w-32 bg-red-800"></div>
-        <div class="h-32 w-32 bg-red-800"></div>
-        <div class="h-32 w-32 bg-red-800"></div>
-        <div class="h-32 w-32 bg-red-800"></div>
-        <div class="h-32 w-32 bg-red-800"></div>
-        <div class="h-32 w-32 bg-red-800"></div>
-        <div class="h-32 w-32 bg-red-800"></div>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
       </div>
-      <Footer />
     </>
   );
 } );

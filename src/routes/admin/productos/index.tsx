@@ -1,13 +1,10 @@
 import { component$ } from "@builder.io/qwik";
-import Nav            from "~/components/shared/nav";
 import AdminTabs      from "~/components/shared/admin-tabs";
-import Footer         from "~/components/shared/footer";
 import AddSection     from "~/components/shared/add-section";
 
 export default component$( () => {
   return (
     <>
-      <Nav />
       <AdminTabs />
       <AddSection/>
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -417,7 +414,6 @@ export default component$( () => {
           </tbody>
         </table>
       </div>
-      <Footer />
     </>
   );
 } );

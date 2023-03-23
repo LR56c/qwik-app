@@ -1,16 +1,13 @@
 import { component$ } from "@builder.io/qwik";
-import Nav            from "~/components/shared/nav";
 import Tabs           from "~/components/shared/tabs";
-import Footer         from "~/components/shared/footer";
 
 export default component$( () => {
   return (
     <>
-      <Nav />
       <Tabs />
       <div
-        class="w-full m-4 flex justify-center items-center place-items-center">
-        <div class="w-1/2 bg-white rounded-lg shadow">
+        class="w-full p-4 flex justify-center items-center place-items-center">
+        <div class="w-full xs:w-2/3 md:w-1/2 bg-white rounded-lg shadow">
           <div
             class="p-4 border-b rounded-t">
             <h3
@@ -18,7 +15,7 @@ export default component$( () => {
               Informacion de la cuenta
             </h3>
           </div>
-          <div class="relative p-6 space-y-6">
+          <div class="relative p-4 space-y-6">
             <div class="relative max-w-md">
               <input type="text" id="floating_outlined"
                      class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
@@ -66,19 +63,18 @@ export default component$( () => {
             </div>
           </div>
           <div
-            class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
+            class="flex flex-col xxs:flex-row items-center gap-4 xxs:gap-0 p-4 space-x-2 border-t border-gray-200 rounded-b">
             <button type="button"
                     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
               Editar
             </button>
             <button type="button"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center">
               Cambiar Contraseña
             </button>
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 } );

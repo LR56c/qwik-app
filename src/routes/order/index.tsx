@@ -1,19 +1,14 @@
 import { component$ } from "@builder.io/qwik";
-import Nav            from "~/components/shared/nav";
-import Alert          from "~/components/shared/alert";
-import Footer         from "~/components/shared/footer";
 
 export default component$( () => {
   return (
     <>
-      <Alert />
-      <Nav />
       <div
-        class="bg-blue-500 h-16 w-full flex justify-center items-center text-white text-3xl">
+        class="bg-blue-500 h-16 w-full flex justify-center items-center text-white text-base xxs:text-2xl xs:text-3xl ">
         Estado de orden&nbsp;<a href="#"
                                 class="font-medium underline">#123456</a>
       </div>
-      <ol class="flex mt-12 items-center w-full">
+      <ol class="flex mt-12  items-center mx-auto w-full sm:w-2/3 lg:w-1/2">
         <div class="basis-2/12"></div>
         <li
           class="flex w-full items-center text-blue-600 after:content-[''] after:w-full after:h-1 after:border-b after:border-blue-100 after:border-4 after:inline-block dark:after:border-blue-800">
@@ -56,23 +51,23 @@ export default component$( () => {
         </li>
         <div class="basis-2/12"></div>
       </ol>
-      <ol class="flex items-center w-full">
+      <ol class="flex  items-center mx-auto w-full sm:w-2/3 lg:w-1/2">
         <div class="basis-2/12"></div>
         <li class="flex w-full items-center text-blue-600">
             <span
-              class="flex items-center justify-center w-10 h-10 lg:h-12 lg:w-12 shrink-0">
+              class="flex items-center justify-center xxs:text-base text-xs w-10 h-10 lg:h-12 lg:w-12 shrink-0">
               confirmado
             </span>
         </li>
         <li class="flex w-full items-center">
             <span
-              class="flex items-center justify-center w-10 h-10 lg:h-12 lg:w-12 shrink-0">
+              class="flex items-center justify-center xxs:text-base text-xs w-10 h-10 lg:h-12 lg:w-12 shrink-0">
               proceso
             </span>
         </li>
         <li class="flex items-center ">
             <span
-              class="flex items-center justify-center w-10 h-10 lg:h-12 lg:w-12 shrink-0">
+              class="flex items-center justify-center xxs:text-base text-xs w-10 h-10 lg:h-12 lg:w-12 shrink-0">
               terminado
             </span>
         </li>
@@ -106,17 +101,6 @@ export default component$( () => {
 
         </div>
       </div>
-      <button type="button"
-              class="p-3 text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-full text-sm text-center inline-flex items-center dark:focus:ring-[#3b5998]/55">
-        <svg class="w-6 h-6" aria-hidden="true"
-             focusable="false" data-prefix="fab" data-icon="facebook-f"
-             role="img" xmlns="http://www.w3.org/2000/svg"
-             viewBox="0 0 320 512">
-          <path fill="currentColor"
-                d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path>
-        </svg>
-      </button>
-      <Footer />
     </>
   );
 } );

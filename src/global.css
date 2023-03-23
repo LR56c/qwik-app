@@ -5,3 +5,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*body {*/
+/*  --sb-track-color: #f1f1f1;*/
+/*  --sb-thumb-color: #c1c1c1;*/
+/*  --sb-size: 10px;*/
+
+/*  scrollbar-color: var(--sb-thumb-color)*/
+/*  var(--sb-track-color);*/
+/*}*/
+
+/*body::-webkit-scrollbar {*/
+/*  width: var(--sb-size)*/
+/*}*/
+
+/*body::-webkit-scrollbar-track {*/
+/*  background: var(--sb-track-color);*/
+/*  border-radius: 16px;*/
+/*}*/
+
+/*body::-webkit-scrollbar-thumb {*/
+/*  background: var(--sb-thumb-color);*/
+/*  border-radius: 16px;*/
+/*}*/
