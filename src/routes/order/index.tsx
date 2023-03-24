@@ -98,7 +98,6 @@ export default component$( () => {
               </svg>
             </a>
           </p>
-
         </div>
       </div>
     </>

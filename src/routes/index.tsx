@@ -124,7 +124,6 @@ export default component$( () => {
         <RecomendedProduct />
         <RecomendedProduct />
       </div>
-      <Footer />
     </>
   );
 } );
