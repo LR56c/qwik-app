@@ -3,7 +3,7 @@ import { component$ } from "@builder.io/qwik";
 export default component$( () => {
   return (
     <>
-      <footer class="bg-white dark:bg-gray-900">
+      <footer class="bg-gray-200 dark:bg-gray-900">
         <div class="mx-auto w-full container p-4 sm:p-6">
           <div class="md:flex md:justify-between">
             {/*seccion logo*/}
@@ -110,10 +110,10 @@ export default component$( () => {
           {/*linea hr*/ }
           <hr
             class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <div class="sm:flex sm:items-center sm:justify-between">
+          <div class="flex items-center justify-center">
             {/*  parte final*/ }
             <span
-              class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023. All Rights Reserved.
+              class="text-sm text-gray-500 text-center dark:text-gray-400">© 2023. All Rights Reserved.
           </span>
           </div>
         </div>

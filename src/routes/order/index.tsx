@@ -4,7 +4,7 @@ export default component$( () => {
   return (
     <>
       <div
-        class="bg-blue-500 h-16 w-full flex justify-center items-center text-white text-base xxs:text-2xl xs:text-3xl ">
+        class="bg-yellow-400 h-16 w-full flex justify-center items-center text-white text-base xxs:text-2xl xs:text-3xl ">
         Estado de orden&nbsp;<a href="#"
                                 class="font-medium underline">#123456</a>
       </div>

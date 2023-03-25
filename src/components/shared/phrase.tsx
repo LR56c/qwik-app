@@ -3,7 +3,7 @@ import { component$ } from "@builder.io/qwik";
 export default component$( () => {
   return (
     <>
-      <div class=" my-4 md:my-8 flex w-full space-x-4">
+      <div class="my-4 md:my-8 flex w-full space-x-4">
         <div
           class="flex w-64 items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-100 after:border-1 after:inline-block">
         </div>

@@ -1,10 +1,11 @@
-import { component$ } from "@builder.io/qwik";
-import AdminTabs      from "~/components/shared/admin-tabs";
+import { component$ } from "@builder.io/qwik"
+import AdminTabs      from "~/components/shared/admin-tabs"
+import EditButton     from "~/components/shared/edit-button"
 
 export default component$( () => {
   return (
     <>
-      <AdminTabs />
+      <AdminTabs/>
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <table
           class="w-full text-sm text-left text-gray-500">
@@ -27,7 +28,7 @@ export default component$( () => {
               DIRECCION
             </th>
             <th scope="col" class="px-6 py-3">
-              Action
+              ACCION
             </th>
           </tr>
           </thead>
@@ -50,11 +51,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               123 Main St, Anytown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr
             class="border-b bg-gray-50">
             <th scope="row"
@@ -73,11 +70,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               456 Elm St, Anytown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr
             class="bg-white border-b">
             <th scope="row"
@@ -96,11 +89,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               789 Oak St, Anytown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr
             class="border-b bg-gray-50">
             <th scope="row"
@@ -119,11 +108,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               567 Pine St, Anytown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr
             class="bg-white border-b">
             <th scope="row"
@@ -142,11 +127,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               789 Maple St, Anytown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr
             class="border-b bg-gray-50">
             <th scope="row"
@@ -165,11 +146,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               123 Oak St, Anytown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr
             class="bg-white border-b">
             <th scope="row"
@@ -188,11 +165,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               456 Oak St, Anytown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr
             class="border-b bg-gray-50">
             <th scope="row"
@@ -211,11 +184,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               1234 Maple Ln, Bigtown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr
             class="bg-white border-b">
             <th scope="row"
@@ -234,11 +203,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               789 Cherry St, Anytown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr
             class="border-b bg-gray-50">
             <th scope="row"
@@ -257,11 +222,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               234 Elm St, Anytown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr
             class="bg-white border-b">
             <th scope="row"
@@ -280,11 +241,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               345 Maple St, Anytown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
                 class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
@@ -302,11 +259,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               456 Maple St, Anytown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr class="bg-white border-b">
             <th scope="row"
                 class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
@@ -324,11 +277,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               567 Oak St, Anytown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
                 class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
@@ -346,11 +295,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               678 Oak St, Anytown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr class="bg-white border-b">
             <th scope="row"
                 class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
@@ -368,11 +313,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               890 Cedar Rd, Midtown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
                 class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
@@ -390,11 +331,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               890 Oak St, Anytown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr
             class="bg-white border-b">
             <th scope="row"
@@ -413,11 +350,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               369 Spruce Ave, Anywhere, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr
             class="border-b bg-gray-50">
             <th scope="row"
@@ -436,11 +369,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               1010 Cedar St, Newtown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr
             class="bg-white border-b">
             <th scope="row"
@@ -459,11 +388,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               345 Elm St, Anytown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           <tr
             class="border-b bg-gray-50">
             <th scope="row"
@@ -482,14 +407,10 @@ export default component$( () => {
             <td class="px-6 py-4">
               2468 Birch Dr, Hometown, USA
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
-          </tr>
+            <EditButton/></tr>
           </tbody>
         </table>
       </div>
     </>
-  );
-} );
+  )
+} )

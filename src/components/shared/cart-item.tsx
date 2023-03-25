@@ -1,27 +1,33 @@
-import { component$ } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik"
 
 export default component$( () => {
   return (
     <>
       <div
         class="relative flex flex-col justify-center items-center gap-2 w-4/5 xs:max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow">
-        <div class="flex w-full flex-col xxs:flex-row justify-center items-center">
-          {/*<img*/ }
-          {/*  src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"*/ }
-          {/*  className="h-10 w-10 bg-gray-700 object-contain"*/ }
-          {/*  alt="..." />*/ }
-          <div class="w-20 h-20 bg-gray-700 rounded-lg"></div>
-          <div class="flex w-full basis-4/6 justify-center items-center">nombre</div>
+        <div
+          class="flex w-full flex-col xxs:flex-row justify-center items-center">
+          <img
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+            class="h-20 w-20 bg-gray-700 basis-1/2 object-contain rounded-lg"
+            alt="..."/>
+          <div
+            class="flex w-full basis-1/2 justify-center items-center">nombre
+          </div>
         </div>
         {/*parte inferior*/ }
-        <div class="flex w-full xxs:flex-row flex-col justify-center items-center">
+        <div
+          class="flex w-full xxs:flex-row flex-col justify-center items-center">
           {/*precio*/ }
           <div
             class="w-full h-full flex flex-col items-center">
             <div class="text-gray-400 line-through">$100</div>
             <div class="flex items-center flex-col gap-2">
               <div class="text-red-600 text-2xl font-bold">$60</div>
-              <div class="text-red-600 text-xs xs:text-sm rounded-full bg-red-100">-40% descuento</div>
+              <div
+                class="text-red-600 text-xs xs:text-sm rounded-full bg-red-100">-40%
+                descuento
+              </div>
             </div>
           </div>
           {/*cantidad*/ }
@@ -61,5 +67,5 @@ export default component$( () => {
         <button class="absolute right-2 top-2">delete</button>
       </div>
     </>
-  );
-} );
+  )
+} )

@@ -10,7 +10,7 @@ export default component$( () => {
   return (
     <>
 
-      <div id="default-carousel" class="relative w-full"
+      <div id="default-carousel" class="relative w-full z-0"
            data-carousel="slide">
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
@@ -111,7 +111,7 @@ export default component$( () => {
       </div>
       <Phrase />
       <div
-        class="mx-auto grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 justify-items-center">
+        class="mx-auto my-4 grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 justify-items-center">
         <RecomendedProduct />
         <RecomendedProduct />
         <RecomendedProduct />

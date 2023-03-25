@@ -1,6 +1,7 @@
-import { component$ } from "@builder.io/qwik";
-import Tabs           from "~/components/shared/tabs";
+import { component$ } from "@builder.io/qwik"
+import Tabs           from "~/components/shared/tabs"
 
+// TODO: EDIT BUTTON DIFERENTE PADDING
 export default component$( () => {
   return (
     <>
@@ -44,9 +45,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Calle 12 #23-45
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -64,9 +67,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Carrera 7 #98-23
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -84,9 +89,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Avenida 3 #10-56
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -104,9 +111,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Calle 45 #17-98
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -124,9 +133,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Carrera 12 #45-67
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -144,13 +155,15 @@ export default component$( () => {
             <td class="px-6 py-4">
               Avenida 5 #20-30
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
-            <tr
-              class="bg-white border-b">
+          <tr
+            class="bg-white border-b">
             <th scope="row"
                 class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
               1234
@@ -164,9 +177,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Calle 67 #45-12
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -184,9 +199,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Carrera 8 #10-34
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -204,9 +221,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Calle 23 #56-78
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -224,9 +243,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Avenida 1 #15-20
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -244,9 +265,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Calle 34 #56-78
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -264,9 +287,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Carrera 5 #30-45
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -284,9 +309,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Avenida 6 #25-40
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -304,9 +331,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Calle 10 #5-6
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -324,9 +353,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Carrera 3 #12-34
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -344,9 +375,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Avenida 2 #25-30
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -364,9 +397,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Calle 78 #23-45
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -384,9 +419,11 @@ export default component$( () => {
             <td class="px-6 py-4">
               Carrera 9 #5-20
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           <tr
@@ -404,14 +441,16 @@ export default component$( () => {
             <td class="px-6 py-4">
               Avenida 4 #15-25
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
+            <td class="px-3 py-4">
+              <button type="button"
+                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center">
+                Editar
+              </button>
             </td>
           </tr>
           </tbody>
         </table>
       </div>
     </>
-  );
-} );
+  )
+} )

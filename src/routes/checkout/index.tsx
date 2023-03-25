@@ -1,17 +1,21 @@
-import { component$ } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik"
+import ProductCounter from "~/components/shared/product-counter"
+import MiniImage      from "~/components/shared/mini-image"
 
 export default component$( () => {
   return (
     <>
       <div
-        class="bg-blue-500 h-16 w-full flex justify-center items-center text-white text-xl xxs:text-3xl">
-        Pago orden&nbsp;<a href="#" class="font-medium underline">#123456</a>
+        class="bg-yellow-400 h-16 w-full flex justify-center items-center text-white text-xl xxs:text-3xl">
+        <p>Pago orden&nbsp;</p>
+        <a href="#" class="font-medium underline">#123456</a>
       </div>
-      <div class="flex flex-col lg:flex-row w-full h-full lg:items-start items-center">
-        {/*carrito*/}
+      <div
+        class="flex flex-col lg:flex-row w-full h-full lg:items-start items-center">
+        {/*carrito*/ }
         <div
-          class="m-2 h-full w-full bg-white overflow-x-auto rounded-lg shadow">
-          {/*title*/}
+          class="m-4 h-full w-full bg-white overflow-x-auto rounded-lg shadow">
+          {/*title*/ }
           <div
             class="p-4 space-y-2 border-b rounded-t">
             <h3
@@ -19,7 +23,7 @@ export default component$( () => {
               Listado carrito
             </h3>
           </div>
-          {/*body*/}
+          {/*body*/ }
           <div class="shadow-md sm:rounded-lg">
             <table
               class="w-full text-sm text-left text-gray-500">
@@ -56,11 +60,10 @@ export default component$( () => {
                   Camisa de algodón
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
                 <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="border-b bg-gray-50">
@@ -75,11 +78,10 @@ export default component$( () => {
                   Zapatos de cuero
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="bg-white border-b">
@@ -94,11 +96,10 @@ export default component$( () => {
                   Pantalones de mezclilla
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="border-b bg-gray-50">
@@ -113,11 +114,10 @@ export default component$( () => {
                   Chaqueta de cuero
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="bg-white border-b">
@@ -132,11 +132,10 @@ export default component$( () => {
                   Vestido de seda
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="border-b bg-gray-50">
@@ -151,11 +150,10 @@ export default component$( () => {
                   Sombrero de paja
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="bg-white border-b">
@@ -170,11 +168,10 @@ export default component$( () => {
                   Blusa de encaje
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="border-b bg-gray-50">
@@ -189,11 +186,10 @@ export default component$( () => {
                   Pantalones vaqueros
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="bg-white border-b">
@@ -208,11 +204,10 @@ export default component$( () => {
                   Camiseta de algodón
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="border-b bg-gray-50">
@@ -227,11 +222,10 @@ export default component$( () => {
                   Sandalias de cuero
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="bg-white border-b">
@@ -246,11 +240,10 @@ export default component$( () => {
                   Bufanda de lana
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="border-b bg-gray-50">
@@ -265,11 +258,10 @@ export default component$( () => {
                   Sombrero de lana
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="bg-white border-b">
@@ -284,11 +276,10 @@ export default component$( () => {
                   Bolso de cuero
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="border-b bg-gray-50">
@@ -303,11 +294,10 @@ export default component$( () => {
                   Vestido de verano
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="bg-white border-b">
@@ -322,11 +312,10 @@ export default component$( () => {
                   Abrigo de cuero
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="border-b bg-gray-50">
@@ -341,11 +330,10 @@ export default component$( () => {
                   Zapatillas de deporte
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="bg-white border-b">
@@ -360,11 +348,10 @@ export default component$( () => {
                   Cámara digital compacta
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="border-b bg-gray-50">
@@ -379,11 +366,10 @@ export default component$( () => {
                   Auriculares inalámbricos
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="bg-white border-b">
@@ -398,11 +384,10 @@ export default component$( () => {
                   Reloj inteligente
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               <tr class="border-b bg-gray-50">
@@ -417,18 +402,18 @@ export default component$( () => {
                   Reloj de pulsera
                 </td>
                 <td class="px-6 py-4">
-                  [image]
+                  <MiniImage/>
                 </td>
-                <td class="px-6 py-4">
-                  <a href="#"
-                     class="font-medium text-blue-600 hover:underline">Edit</a>
+                <td class="px-6">
+                  <ProductCounter/>
                 </td>
               </tr>
               </tbody>
             </table>
           </div>
         </div>
-        <div class="lg:order-1 order-first flex flex-col p-2 basis-2/5 lg:w-full w-full xs:w-2/3">
+        <div
+          class="lg:order-1 order-first flex flex-col p-4 basis-2/5 lg:w-full w-full xs:w-2/3">
           {/*Datos Tarjeta*/ }
           <div class="w-full h-48 sm:h-60">
             <div class="h-full bg-white rounded-lg shadow">
@@ -459,7 +444,7 @@ export default component$( () => {
             class="w-full">
             <div
               class="p-3 my-4 bg-white border border-gray-200 rounded-lg shadow">
-              <p class="font-normal text-gray-700">
+              <p class="font-medium text-gray-700">
                 Monto Total: $1234
               </p>
             </div>
@@ -467,14 +452,13 @@ export default component$( () => {
           {/*boton pagar*/ }
           <div class="w-full flex justify-center items-center">
             <button type="button"
-                    class="w-2/3 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700
-                   hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300
-                    dark:focus:ring-blue-800 font-medium rounded-lg px-5 py-2.5 text-center">
+                    class="w-2/3 text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
               Pagar
             </button>
+
           </div>
         </div>
       </div>
     </>
-  );
-} );
+  )
+} )

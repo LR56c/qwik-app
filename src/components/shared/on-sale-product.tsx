@@ -19,7 +19,7 @@ export default component$( () => {
                 alt="" />
               <div class="uk-position-center">
                 <button
-                  class="rounded-lg bg-blue-700 px-5 text-center text-sm font-medium text-white uk-transition-fade py-2.5">
+                  class="rounded-lg bg-yellow-400 px-5 text-center text-sm font-medium text-white uk-transition-fade py-2.5">
                   Agregar al carrito
                 </button>
               </div>
@@ -28,7 +28,7 @@ export default component$( () => {
           <div class="mx-auto basis-1/3">
             <div
               class="my-2 w-full font-medium">
-              Nombre del producto
+              <a href="#">Nombre del producto</a>
             </div>
             <div class="flex w-full items-center gap-2">
               <div class="text-gray-400 line-through">$100</div>

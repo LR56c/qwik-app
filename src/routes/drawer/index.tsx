@@ -7,7 +7,7 @@ export default component$( () => {
       {/*boton drawer*/}
       <div class="text-center">
         <button
-          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           type="button" data-drawer-target="drawer-right-example"
           data-drawer-show="drawer-right-example" data-drawer-placement="right"
           aria-controls="drawer-right-example">
@@ -38,7 +38,7 @@ export default component$( () => {
           </div>
           {/*pagar*/}
           <button type="button"
-                  class="h-12 px-10 py-2.5 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm text-center">
+                  class="h-12 px-12 py-2.5 text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-center">
             Pagar
           </button>
         </div>

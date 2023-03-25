@@ -1,11 +1,13 @@
-import { component$ } from "@builder.io/qwik";
-import AdminTabs      from "~/components/shared/admin-tabs";
-import AddSection     from "~/components/shared/add-section";
+import { component$ } from "@builder.io/qwik"
+import AdminTabs      from "~/components/shared/admin-tabs"
+import AddSection     from "~/components/shared/add-section"
+import EditButton     from "~/components/shared/edit-button"
+import MiniImage      from "~/components/shared/mini-image"
 
 export default component$( () => {
   return (
     <>
-      <AdminTabs />
+      <AdminTabs/>
       <AddSection/>
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <table
@@ -43,12 +45,11 @@ export default component$( () => {
               Camisa de algodón
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
+
           </tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
@@ -62,12 +63,10 @@ export default component$( () => {
               Zapatos de cuero
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
             <th scope="row"
@@ -81,12 +80,10 @@ export default component$( () => {
               Pantalones de mezclilla
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
@@ -100,12 +97,10 @@ export default component$( () => {
               Chaqueta de cuero
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
             <th scope="row"
@@ -119,12 +114,10 @@ export default component$( () => {
               Vestido de seda
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
@@ -138,12 +131,10 @@ export default component$( () => {
               Sombrero de paja
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
             <th scope="row"
@@ -157,12 +148,10 @@ export default component$( () => {
               Blusa de encaje
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
@@ -176,12 +165,10 @@ export default component$( () => {
               Pantalones vaqueros
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
             <th scope="row"
@@ -195,12 +182,10 @@ export default component$( () => {
               Camiseta de algodón
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
@@ -214,12 +199,10 @@ export default component$( () => {
               Sandalias de cuero
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
             <th scope="row"
@@ -233,12 +216,10 @@ export default component$( () => {
               Bufanda de lana
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
@@ -252,12 +233,10 @@ export default component$( () => {
               Sombrero de lana
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
             <th scope="row"
@@ -271,12 +250,10 @@ export default component$( () => {
               Bolso de cuero
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
@@ -290,12 +267,10 @@ export default component$( () => {
               Vestido de verano
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
             <th scope="row"
@@ -309,12 +284,10 @@ export default component$( () => {
               Abrigo de cuero
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
@@ -328,12 +301,10 @@ export default component$( () => {
               Zapatillas de deporte
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
             <th scope="row"
@@ -347,12 +318,10 @@ export default component$( () => {
               Cámara digital compacta
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
@@ -366,12 +335,10 @@ export default component$( () => {
               Auriculares inalámbricos
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
             <th scope="row"
@@ -385,12 +352,10 @@ export default component$( () => {
               Reloj inteligente
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
@@ -404,16 +369,14 @@ export default component$( () => {
               Reloj de pulsera
             </td>
             <td class="px-6 py-4">
-              [image]
+              <MiniImage/>
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+                        <EditButton/>
+
           </tr>
           </tbody>
         </table>
       </div>
     </>
-  );
-} );
+  )
+} )

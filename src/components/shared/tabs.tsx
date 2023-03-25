@@ -3,7 +3,7 @@ import { component$ } from "@builder.io/qwik";
 export default component$( () => {
   return (
     <>
-      <div class="border-b border-gray-200">
+      <div class="bg-gray-200 border-b border-gray-200">
         <ul
           class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 justify-center items-center">
           <li class="mr-2">

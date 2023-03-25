@@ -1,11 +1,12 @@
-import { component$ } from "@builder.io/qwik";
-import AdminTabs      from "~/components/shared/admin-tabs";
-import AddSection     from "~/components/shared/add-section";
+import { component$ } from "@builder.io/qwik"
+import AdminTabs      from "~/components/shared/admin-tabs"
+import AddSection     from "~/components/shared/add-section"
+import EditButton     from "~/components/shared/edit-button"
 
 export default component$( () => {
   return (
     <>
-      <AdminTabs />
+      <AdminTabs/>
       <AddSection/>
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <table
@@ -63,10 +64,7 @@ export default component$( () => {
             <td class="px-6 py-4">
               Liquidación de temporada
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
           </tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
@@ -91,10 +89,8 @@ export default component$( () => {
             <td class="px-6 py-4">
               Venta de primavera
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
             <th scope="row"
@@ -119,10 +115,8 @@ export default component$( () => {
             <td class="px-6 py-4">
               Oferta de liquidación
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
@@ -147,9 +141,8 @@ export default component$( () => {
             <td class="px-6 py-4">
               Oferta de otoño
             </td>
-            <td class="px-6 py-4">
-              <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
             <th scope="row"
@@ -174,10 +167,8 @@ export default component$( () => {
             <td class="px-6 py-4">
               Venta de verano
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
@@ -202,10 +193,8 @@ export default component$( () => {
             <td class="px-6 py-4">
               Oferta de vacaciones
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
             <th scope="row"
@@ -230,10 +219,8 @@ export default component$( () => {
             <td class="px-6 py-4">
               Liquidación de temporada
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
@@ -258,12 +245,12 @@ export default component$( () => {
             <td class="px-6 py-4">
               Venta de otoño
             </td>
-            <td class="px-6 py-4">
-              <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
-            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+            <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
               109
             </th>
             <td class="px-6 py-4">
@@ -284,12 +271,12 @@ export default component$( () => {
             <td class="px-6 py-4">
               Venta de verano
             </td>
-            <td class="px-6 py-4">
-              <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
-            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+            <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
               110
             </th>
             <td class="px-6 py-4">
@@ -310,12 +297,12 @@ export default component$( () => {
             <td class="px-6 py-4">
               Venta de verano
             </td>
-            <td class="px-6 py-4">
-              <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
-            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+            <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
               111
             </th>
             <td class="px-6 py-4">
@@ -336,9 +323,8 @@ export default component$( () => {
             <td class="px-6 py-4">
               Venta de invierno
             </td>
-            <td class="px-6 py-4">
-              <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
@@ -363,10 +349,8 @@ export default component$( () => {
             <td class="px-6 py-4">
               Venta de invierno
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
             <th scope="row"
@@ -391,10 +375,8 @@ export default component$( () => {
             <td class="px-6 py-4">
               Venta de primavera
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
             <th scope="row"
@@ -419,10 +401,8 @@ export default component$( () => {
             <td class="px-6 py-4">
               Venta de verano
             </td>
-            <td class="px-6 py-4">
-              <a href="#"
-                 class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
             <th scope="row"
@@ -447,12 +427,12 @@ export default component$( () => {
             <td class="px-6 py-4">
               Venta de invierno
             </td>
-            <td class="px-6 py-4">
-              <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
-            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+            <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
               116
             </th>
             <td class="px-6 py-4">
@@ -473,12 +453,12 @@ export default component$( () => {
             <td class="px-6 py-4">
               Venta de primavera
             </td>
-            <td class="px-6 py-4">
-              <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
-            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+            <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
               117
             </th>
             <td class="px-6 py-4">
@@ -499,12 +479,12 @@ export default component$( () => {
             <td class="px-6 py-4">
               Venta de verano
             </td>
-            <td class="px-6 py-4">
-              <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
-            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+            <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
               118
             </th>
             <td class="px-6 py-4">
@@ -526,12 +506,12 @@ export default component$( () => {
               Venta de verano
 
             </td>
-            <td class="px-6 py-4">
-              <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="bg-white border-b">
-            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+            <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
               119
             </th>
             <td class="px-6 py-4">
@@ -552,12 +532,12 @@ export default component$( () => {
             <td class="px-6 py-4">
               Venta de navidad
             </td>
-            <td class="px-6 py-4">
-              <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           <tr class="border-b bg-gray-50">
-            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+            <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
               120
             </th>
             <td class="px-6 py-4">
@@ -578,13 +558,12 @@ export default component$( () => {
             <td class="px-6 py-4">
               Venta de invierno
             </td>
-            <td class="px-6 py-4">
-              <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-            </td>
+            <EditButton/>
+
           </tr>
           </tbody>
         </table>
       </div>
     </>
-  );
-} );
+  )
+} )
