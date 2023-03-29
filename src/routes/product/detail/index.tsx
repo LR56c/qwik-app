@@ -1,65 +1,69 @@
-import { component$ } from "@builder.io/qwik";
-import Phrase         from "~/components/shared/phrase";
-import OnSaleProduct  from "~/components/shared/on-sale-product";
+import { component$ } from "@builder.io/qwik"
+import Phrase         from "~/components/shared/phrase"
+import OnSaleProduct  from "~/components/shared/on-sale-product"
+import Footer         from "~/components/shared/footer"
+import Nav            from "~/components/shared/nav"
 
+// TODO: raro que suceda que no haya data aqui
 export default component$( () => {
   return (
     <>
+      <Nav/>
       <div class="relative flex flex-col md:flex-row w-full h-full gap-4 p-4">
-        {/*apartado imagenes producto*/}
+        {/*apartado imagenes producto*/ }
         <div class="h-full flex flex-col basis-2/3 gap-4">
-          {/*imagen movil/tablet*/}
+          {/*imagen movil/tablet*/ }
           <div class="block md:hidden w-full h-full flex justify-center">
             <img class="h-24 xxs:h-36 xs:h-56 sm:h-72 object-contain rounded-lg"
                  src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg"
-                 alt="" />
+                 alt=""/>
           </div>
-          {/*listado movil/tablet*/}
+          {/*listado movil/tablet*/ }
           <div
             class="md:hidden flex justify-start gap-4 h-40 overflow-x-auto flex">
             <img class="h-36 h-36 rounded-lg"
                  src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
-                 alt="" />
+                 alt=""/>
             <img class="h-36 h-36 rounded-lg"
                  src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
-                 alt="" />
+                 alt=""/>
             <img class="h-36 h-36 rounded-lg"
                  src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
-                 alt="" />
+                 alt=""/>
             <img class="h-36 h-36 rounded-lg"
                  src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
-                 alt="" />
+                 alt=""/>
             <img class="h-36 h-36 rounded-lg"
                  src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
-                 alt="" />
+                 alt=""/>
           </div>
-          {/*imagen principal escritorio*/}
+          {/*imagen principal escritorio*/ }
           <div class="hidden md:block">
             <img class="h-full object-contain w-full rounded-lg"
                  src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg"
-                 alt="" />
+                 alt=""/>
           </div>
-          {/*listado escritorio*/}
+          {/*listado escritorio*/ }
           <div
             class="hidden md:flex lg:flex-nowrap flex-wrap lg:justify-start justify-center gap-4 lg:h-40 h-full overflow-x-auto gap-4">
             <img class="h-36 h-36 rounded-lg"
                  src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
-                 alt="" />
+                 alt=""/>
             <img class="h-36 h-36 rounded-lg"
                  src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
-                 alt="" />
+                 alt=""/>
             <img class="h-36 h-36 rounded-lg"
                  src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
-                 alt="" />
+                 alt=""/>
             <img class="h-36 h-36 rounded-lg"
                  src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
-                 alt="" />
+                 alt=""/>
             <img class="h-36 h-36 rounded-lg"
                  src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
-                 alt="" />
+                 alt=""/>
           </div>
         </div>
-        {/*apartado ficha producto*/}
+        {/*apartado ficha producto*/ }
         <div
           class="h-full w-full basis-1/3 flex flex-col justify-center items-start">
           <div
@@ -119,8 +123,9 @@ export default component$( () => {
           </div>
         </div>
       </div>
-      <Phrase />
-      <div class="flex flex-wrap w-full gap-4 h-full justify-center items-center">
+      <Phrase/>
+      <div
+        class="flex flex-wrap w-full gap-4 h-full justify-center items-center">
         <OnSaleProduct/>
         <OnSaleProduct/>
         <OnSaleProduct/>
@@ -130,6 +135,8 @@ export default component$( () => {
         <OnSaleProduct/>
         <OnSaleProduct/>
       </div>
+
+      <Footer/>
     </>
-  );
-} );
+  )
+} )

@@ -1,10 +1,14 @@
 import { component$ } from "@builder.io/qwik"
 import AdminTabs      from "~/components/shared/admin-tabs"
 import EditButton     from "~/components/shared/edit-button"
+import Nav            from "~/components/shared/nav"
+import Footer         from "~/components/shared/footer"
 
+// TODO: colocar truco absolute cuando no hay data
 export default component$( () => {
   return (
     <>
+      <Nav/>
       <AdminTabs/>
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <table
@@ -411,6 +415,7 @@ export default component$( () => {
           </tbody>
         </table>
       </div>
+      <Footer/>
     </>
   )
 } )

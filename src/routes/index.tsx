@@ -1,14 +1,16 @@
-import { component$ }        from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
-import Footer                from "~/components/shared/footer";
-import Nav                   from "~/components/shared/nav";
-import Phrase                from "~/components/shared/phrase";
-import RecomendedProduct     from "~/components/shared/recomended-product";
-import OnSaleProduct         from "~/components/shared/on-sale-product";
+import { component$ }        from "@builder.io/qwik"
+import type { DocumentHead } from "@builder.io/qwik-city"
+import Phrase                from "~/components/shared/phrase"
+import RecomendedProduct     from "~/components/shared/recomended-product"
+import OnSaleProduct         from "~/components/shared/on-sale-product"
+import Nav                   from "~/components/shared/nav"
+import Footer                from "~/components/shared/footer"
 
+// TODO: raro que suceda que no haya data aqui
 export default component$( () => {
   return (
     <>
+      <Nav/>
 
       <div id="default-carousel" class="relative w-full z-0"
            data-carousel="slide">
@@ -17,31 +19,31 @@ export default component$( () => {
             <img
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
               class="absolute top-1/2 left-1/2 block h-full w-full -translate-x-1/2 -translate-y-1/2 object-contain"
-              alt="..." />
+              alt="..."/>
           </div>
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
               class="absolute top-1/2 left-1/2 block h-full w-full -translate-x-1/2 -translate-y-1/2 object-contain"
-              alt="..." />
+              alt="..."/>
           </div>
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
               class="absolute top-1/2 left-1/2 block h-full w-full -translate-x-1/2 -translate-y-1/2 object-contain"
-              alt="..." />
+              alt="..."/>
           </div>
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
               class="absolute top-1/2 left-1/2 block h-full w-full -translate-x-1/2 -translate-y-1/2 object-contain"
-              alt="..." />
+              alt="..."/>
           </div>
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
               class="absolute top-1/2 left-1/2 block h-full w-full -translate-x-1/2 -translate-y-1/2 object-contain"
-              alt="..." />
+              alt="..."/>
           </div>
         </div>
         <div
@@ -95,38 +97,39 @@ export default component$( () => {
       </div>
       {/*pagina editor scrollbar https://scrollbar.app/*/ }
       <div class="my-6 flex h-56 w-full gap-6 overflow-x-auto">
-        <OnSaleProduct />
-        <OnSaleProduct />
-        <OnSaleProduct />
-        <OnSaleProduct />
-        <OnSaleProduct />
-        <OnSaleProduct />
-        <OnSaleProduct />
-        <OnSaleProduct />
-        <OnSaleProduct />
-        <OnSaleProduct />
-        <OnSaleProduct />
-        <OnSaleProduct />
-        <OnSaleProduct />
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
+        <OnSaleProduct/>
       </div>
-      <Phrase />
+      <Phrase/>
       <div
-        class="mx-auto my-4 grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 justify-items-center">
-        <RecomendedProduct />
-        <RecomendedProduct />
-        <RecomendedProduct />
-        <RecomendedProduct />
-        <RecomendedProduct />
-        <RecomendedProduct />
-        <RecomendedProduct />
-        <RecomendedProduct />
-        <RecomendedProduct />
-        <RecomendedProduct />
-        <RecomendedProduct />
+        class="mx-auto py-4 grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 justify-items-center">
+        <RecomendedProduct/>
+        <RecomendedProduct/>
+        <RecomendedProduct/>
+        <RecomendedProduct/>
+        <RecomendedProduct/>
+        <RecomendedProduct/>
+        <RecomendedProduct/>
+        <RecomendedProduct/>
+        <RecomendedProduct/>
+        <RecomendedProduct/>
+        <RecomendedProduct/>
       </div>
+      <Footer/>
     </>
-  );
-} );
+  )
+} )
 
 export const head: DocumentHead = {
   title: "Welcome to Qwik",
@@ -136,4 +139,4 @@ export const head: DocumentHead = {
       content: "Qwik site description"
     }
   ]
-};
+}

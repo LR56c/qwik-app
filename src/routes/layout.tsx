@@ -1,8 +1,5 @@
 import { component$, Slot } from "@builder.io/qwik"
 import { routeLoader$ }     from "@builder.io/qwik-city"
-import Footer               from "~/components/shared/footer"
-import Nav                  from "~/components/shared/nav"
-import Alert                from "~/components/shared/alert"
 
 export const useServerTimeLoader = routeLoader$( () => {
   return {
@@ -16,9 +13,9 @@ export default component$( () => {
       class="bg-gray-100"
     >
       {/*<Alert/>*/ }
-      <Nav/>
+      {/*<Nav/>*/}
       <Slot/>
-      <Footer/>
+      {/*<Footer/>*/}
       <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
       <script
         src="https://cdn.jsdelivr.net/npm/uikit@3.16.10/dist/js/uikit.min.js"></script>

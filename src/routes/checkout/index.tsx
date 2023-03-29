@@ -1,10 +1,14 @@
 import { component$ } from "@builder.io/qwik"
 import ProductCounter from "~/components/shared/product-counter"
 import MiniImage      from "~/components/shared/mini-image"
+import Nav            from "~/components/shared/nav"
+import Footer         from "~/components/shared/footer"
 
+// TODO: raro que suceda que no haya data aqui
 export default component$( () => {
   return (
     <>
+      <Nav/>
       <div
         class="bg-yellow-400 h-16 w-full flex justify-center items-center text-white text-xl xxs:text-3xl">
         <p>Pago orden&nbsp;</p>
@@ -459,6 +463,7 @@ export default component$( () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   )
 } )

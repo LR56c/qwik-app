@@ -1,10 +1,15 @@
 import { component$ } from "@builder.io/qwik"
 import Tabs           from "~/components/shared/tabs"
+import Nav            from "~/components/shared/nav"
+import Footer         from "~/components/shared/footer"
 
 // TODO: EDIT BUTTON DIFERENTE PADDING
+// TODO: colocar truco absolute cuando no hay data
 export default component$( () => {
   return (
     <>
+      <Nav/>
+
       <Tabs/>
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <table
@@ -451,6 +456,7 @@ export default component$( () => {
           </tbody>
         </table>
       </div>
+      <Footer/>
     </>
   )
 } )
