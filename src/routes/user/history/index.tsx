@@ -5,6 +5,7 @@ import Footer         from "~/components/shared/footer"
 
 // TODO: EDIT BUTTON DIFERENTE PADDING
 // TODO: colocar truco absolute cuando no hay data
+// TODO: colocar modal al boton edit, navegar con href en tabs
 export default component$( () => {
   return (
     <>

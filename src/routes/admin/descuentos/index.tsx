@@ -6,6 +6,7 @@ import Nav            from "~/components/shared/nav"
 import Footer         from "~/components/shared/footer"
 
 // TODO: colocar truco absolute cuando no hay data
+// TODO: boton editar modal, boton agregar modal, navegacion href tabs
 export default component$( () => {
   return (
     <>

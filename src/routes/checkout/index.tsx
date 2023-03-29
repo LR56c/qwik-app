@@ -5,6 +5,7 @@ import Nav            from "~/components/shared/nav"
 import Footer         from "~/components/shared/footer"
 
 // TODO: raro que suceda que no haya data aqui
+// TODO: sacar href a num orden, navegar a estado despacho simulando
 export default component$( () => {
   return (
     <>

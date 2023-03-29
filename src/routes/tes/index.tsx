@@ -20,3 +20,5 @@ export default component$( () => {
     </>
   )
 } )
+// TODO: navegar con href en nav y footer
+// TODO: buscador href con query?

@@ -4,6 +4,7 @@ import Nav            from "~/components/shared/nav"
 import Footer         from "~/components/shared/footer"
 
 // TODO: no importa truco absolute, es modo de prueba drawer
+// TODO: boton pagar navegar a estado despacho simulando
 export default component$( () => {
   return (
     <>

@@ -3,6 +3,8 @@ import Tabs           from "~/components/shared/tabs"
 import Footer         from "~/components/shared/footer"
 import Nav            from "~/components/shared/nav"
 
+// TODO: raro que suceda que no haya data aqui
+// TODO: colocar modal al boton desactivar suscripcion, navegar con href en tabs
 export default component$( () => {
   return (
     <>

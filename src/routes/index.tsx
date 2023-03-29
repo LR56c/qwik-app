@@ -7,6 +7,7 @@ import Nav                   from "~/components/shared/nav"
 import Footer                from "~/components/shared/footer"
 
 // TODO: raro que suceda que no haya data aqui
+// TODO: navegar href carusel, oferta y listado a producto
 export default component$( () => {
   return (
     <>

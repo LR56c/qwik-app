@@ -3,12 +3,13 @@ import Nav            from "~/components/shared/nav"
 import Footer         from "~/components/shared/footer"
 
 // TODO: colocar truco absolute cuando es muy alto
+// TODO: boton crear ingresa aqui a login, registrarse modal y a inicio?
 export default component$( () => {
   return (
     <>
       <Nav/>
       <div
-        class="w-full max-w-sm mx-auto my-8 bg-white border border-gray-200 rounded-lg shadow p-8 dark:bg-gray-800 dark:border-gray-700">
+        class="w-full sm:w-3/4 lg:max-w-3xl mx-auto sm:my-8 py-4 bg-white border border-gray-200 rounded-lg shadow p-8 dark:bg-gray-800 dark:border-gray-700">
         <form class="space-y-6" action="#">
           <h5
             class="text-xl font-medium text-gray-900 dark:text-white">Registrate</h5>

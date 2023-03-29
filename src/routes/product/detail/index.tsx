@@ -5,6 +5,7 @@ import Footer         from "~/components/shared/footer"
 import Nav            from "~/components/shared/nav"
 
 // TODO: raro que suceda que no haya data aqui
+// TODO: abrir drawer al agregar carrito? mandar a pagar altiro?, navegar con href en ofertas
 export default component$( () => {
   return (
     <>
